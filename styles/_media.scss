@@ -1,34 +1,34 @@
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   header {
     padding: 0;
   }
 
   header .header {
-    padding: 2rem !important;
+    padding: 0 !important;
   }
 
   .header-content {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
+    .left-header{
+      .h-shape {
+        // clip-path: polygon(25% 0%, 71% 25%, 100% 50%, 75% 75%, 75% 100%) !important;
+        display: none;
+      }
+  
+      .image {
+        margin:0 auto !important;
+        width: 90%;
+      }
+    }
   }
 
-  .left-header{
-    .h-shape {
-      // clip-path: polygon(25% 0%, 71% 25%, 100% 50%, 75% 75%, 75% 100%) !important;
-      display: none;
-    }
-
-    .image {
-      margin: 0 auto;
-      width: 110%;
-    }
-  }
 
   .right-header {
     padding: 10%;
     grid-row: 1;
-    width: 110%;
+    width: 100%;
     margin: 0 auto;
 
     .name {
@@ -37,7 +37,6 @@
 
     p {
       font-size: 1.5rem;
-      word-spacing: 15%;
       line-height: 1.5;
     }
   }
@@ -63,11 +62,6 @@
   .about-container {
     grid-template-columns: 1fr;
 
-    .right-about{
-      grid-template-columns: 1fr;
-      padding-top:  2.5rem;
-    }
-
     .left-about {
       padding-right: 0;
 
@@ -86,27 +80,86 @@
     padding: 2rem 2.5rem;
   }
 
+  // .portfolio {
+    
+
+  //   .port-text {
+  //     width: 100%;
+  //     padding-top: 2rem;
+  //     flex-wrap: wrap;
+  //     gap: 1rem;
+
+  //     .sort-btn {
+  //       height: 2.5rem;
+
+  //       p {
+  //         padding: 1rem 1.5rem;
+  //         font-weight: 400;
+  //         font-size: 12px;
+  //       }
+  //     }
+  //   }
+
+  //   .ports{
+  //     grid-template-columns: 1fr;
+  //   }
+  // }
+
+  .ports{
+    grid-template-columns: 1fr;
+  }
+
+  .main-title{
+    h2 {
+      font-size: 2rem;
+      span {
+        font-size: 2.5rem;
+      }
+      .bg-text {
+        top:30%;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px){
+  header {
+    padding: 0 !important;
+  }
+  .section {
+    padding: 7rem 11rem;
+  }
+
+  .right-about{
+    grid-template-columns: 1fr !important;
+    padding-top:  2.5rem;
+  }
+
   .portfolio {
     .port-text {
       padding-top: 2rem;
-      width: 100%;
-      padding: 3rem 0 1rem 0;
-      column-gap: 1.5rem;
+      gap: 1rem;
 
       .sort-btn {
-        height: 2.5rem;
-        width: fit-content;
 
         p {
-          padding: 1rem 1.5rem;
-          font-weight: 500;
-          font-size: 14px;
+          font-size: 16px;
         }
       }
     }
 
     .ports{
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .main-title {
+    h2{
+      font-size: 4rem;
+      span {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -126,18 +179,6 @@
             margin-top: 1.5rem;
           }
         }
-      }
-    }
-  }
-
-  .main-title{
-    h2 {
-      font-size: 2rem;
-      span {
-        font-size: 2.5rem;
-      }
-      .bg-text {
-        font-size: 3rem;
       }
     }
   }
