@@ -1,0 +1,145 @@
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+
+  header .header {
+    padding: 2rem !important;
+  }
+
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+
+  .left-header{
+    .h-shape {
+      // clip-path: polygon(25% 0%, 71% 25%, 100% 50%, 75% 75%, 75% 100%) !important;
+      display: none;
+    }
+
+    .image {
+      margin: 0 auto;
+      width: 110%;
+    }
+  }
+
+  .right-header {
+    padding: 10%;
+    grid-row: 1;
+    width: 110%;
+    margin: 0 auto;
+
+    .name {
+      font-size: 2.5rem !important;
+    }
+
+    p {
+      font-size: 1.5rem;
+      word-spacing: 15%;
+      line-height: 1.5;
+    }
+  }
+  .switch-btn{
+    width: 50px;
+    height: 50px;
+  }
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+
+    .control {
+      margin: 1rem .3rem;
+    }
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    .right-about{
+      grid-template-columns: 1fr;
+      padding-top:  2.5rem;
+    }
+
+    .left-about {
+      padding-right: 0;
+
+      p{
+        padding-left: 0;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .section {
+    padding: 2rem 2.5rem;
+  }
+
+  .portfolio {
+    .port-text {
+      padding-top: 2rem;
+      width: 100%;
+      padding: 3rem 0 1rem 0;
+      column-gap: 1.5rem;
+
+      .sort-btn {
+        height: 2.5rem;
+        width: fit-content;
+
+        p {
+          padding: 1rem 1.5rem;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ports{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact {
+    .contact-con {
+      flex-direction: column;
+
+      .right-contact {
+        margin-left: 0;
+        margin-top: 2.5rem;
+
+        .input-2 {
+          flex-direction: column;
+          
+          input:last-child{
+            margin-left: 0;
+            margin-top: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .main-title{
+    h2 {
+      font-size: 2rem;
+      span {
+        font-size: 2.5rem;
+      }
+      .bg-text {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
