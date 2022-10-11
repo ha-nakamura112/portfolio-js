@@ -1,11 +1,13 @@
 const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controlls');
-const smallBtns = document.querySelectorAll('.small-controlls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 const switchBtn = document.querySelector('.switch-btn');
 const switchBtns = document.querySelectorAll('.switch-color');
-// const detalsbtn = document.getElementsByTagName('details')[0];
+const smallBtns = document.querySelectorAll('.small-contents');
+const smallIcon = document.querySelectorAll('.small-icon');
+const smallIcons = document.querySelector('.small-title');
+
 
 
 //
@@ -39,13 +41,27 @@ function pageColorChg(){
     }
   })
 
-  for(let i = 0; i < smallBtns .length; i++){
+  for(let i = 0; i < smallBtns.length; i++){
     smallBtns[i].addEventListener('click', function(){
       let currentBtn = document.querySelectorAll('.active-btn');
       currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
       this.className += 'active-btn';
+
+      smallBtns[0].classList.toggle('hide');
+      smallIcon.forEach((icon)=>{
+        icon.classList.toggle('hide');
+      })
     })
   }
+
+  smallIcons.addEventListener('click', (e) =>{
+    smallIcon.forEach((icon)=>{
+      icon.classList.toggle('hide');
+    })
+    // console.log(smallBtn[0].classList);
+    smallBtns[0].classList.toggle('hide');
+  })
+
   allSections.addEventListener('click', (e) =>{
     let id = e.target.dataset.id;
     if(id){

@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }, frameDuration);
   };
 
-  // Intersection observerに渡すコールバック関数
+
   const cb = function(entries, observer) {
     entries.forEach((entry) => {
       if(entry.isIntersecting) {
