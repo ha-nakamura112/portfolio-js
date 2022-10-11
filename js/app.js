@@ -19,6 +19,7 @@ function pageColorChg(){
       let currentBtn = document.querySelectorAll('.active-btn');
       currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
       this.className += 'active-btn';
+      this.style.transition = ("all .2s ease-in-out");
     })
   }
 
