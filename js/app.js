@@ -7,6 +7,7 @@ const switchBtns = document.querySelectorAll('.switch-color');
 const smallBtns = document.querySelectorAll('.small-contents');
 const smallIcon = document.querySelectorAll('.small-icon');
 const smallIcons = document.querySelector('.small-title');
+const headImg = document.querySelector('.head-img');
 
 
 
@@ -49,6 +50,7 @@ function pageColorChg(){
       this.className += 'active-btn';
 
       smallBtns[0].classList.toggle('hide');
+      $(smallBtns[0]).fadeToggle();
       smallIcon.forEach((icon)=>{
         icon.classList.toggle('hide');
       })
@@ -89,6 +91,9 @@ function pageColorChg(){
 
   })
 
+  headImg.addEventListener('mouseover' ,function(){
+    sectBtns.classList.toggle = 'hide';
+  })
 
 }
 pageColorChg();
