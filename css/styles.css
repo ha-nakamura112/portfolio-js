@@ -25,7 +25,7 @@
 }
 
 .light-mode {
-  --color-primary: #FFFAFA;
+  --color-primary: #fafafa;
   --color-secondary: rgb(28, 214, 206);
   --color-bg-secondary: rgba(28, 214, 206,.6);
   --color-white: #191d2b;
@@ -313,7 +313,7 @@ section {
 .header-content .right-header {
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
   justify-content: center;
   padding-right: 18rem;
 }
