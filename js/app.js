@@ -50,7 +50,6 @@ function pageColorChg(){
       this.className += 'active-btn';
 
       smallBtns[0].classList.toggle('hide');
-      $(smallBtns[0]).fadeToggle();
       smallIcon.forEach((icon)=>{
         icon.classList.toggle('hide');
       })
@@ -61,7 +60,6 @@ function pageColorChg(){
     smallIcon.forEach((icon)=>{
       icon.classList.toggle('hide');
     })
-    // console.log(smallBtn[0].classList);
     smallBtns[0].classList.toggle('hide');
   })
 

@@ -932,14 +932,14 @@ section {
     grid-template-columns: 1fr;
   }
   .main-title h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .main-title h2 span {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .main-title h2 .bg-text {
     top: 30%;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 900px) {
@@ -958,16 +958,16 @@ section {
     gap: 1rem;
   }
   .portfolio .port-text .sort-btn p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .portfolio .ports {
     grid-template-columns: 1fr 1fr;
   }
   .main-title h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .main-title h2 span {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .contact .contact-con {
     flex-direction: column;
@@ -1003,10 +1003,10 @@ section {
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
   .right-header p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
   .about-container {
@@ -1031,6 +1031,6 @@ section {
 }
 @media screen and (max-width: 1200px) {
   footer {
-    font-size: 14px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=styles.css.map */
