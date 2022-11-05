@@ -1,6 +1,6 @@
 @media screen and (max-width: 400px){
   .section {
-    padding: 0 !important;
+    padding: 10% !important;
   }
 }
 
@@ -35,6 +35,10 @@
 
   .ports{
     grid-template-columns: 1fr;
+  }
+
+  .sort-btn {
+    z-index: 5;
   }
 
   .main-title{
