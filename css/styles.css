@@ -999,8 +999,8 @@ section {
     display: none;
   }
   .header-content .left-header .image {
-    margin: 0 auto !important;
-    width: 90%;
+    margin: 0% 10% !important;
+    width: 70%;
   }
   .right-header {
     padding: 10%;
