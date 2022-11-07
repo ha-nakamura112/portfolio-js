@@ -7,14 +7,26 @@ const switchBtns = document.querySelectorAll('.switch-color');
 const smallBtns = document.querySelectorAll('.small-contents');
 const smallIcon = document.querySelectorAll('.small-icon');
 const smallIcons = document.querySelector('.small-title');
+const smallCon = document.querySelector('.small-controlls');
 const headImg = document.querySelector('.head-img');
 
 
-
-//
+let smallstyleChg = () =>{
+  if($($('.small-title .fa-solid')[0]).hasClass('hide')){
+    $('.small-controlls').css('width','100%');
+    $('.small-controlls').css('height','100%');
+    $('.small-title .fa-solid').css('background-color','var(--color-grey1)')
+    $('.small-title .fa-solid').css('color','var(--color-grey4)')
+  }else{
+    $('.small-controlls').css('width','0%');
+    $('.small-controlls').css('height','0%');
+    $('.small-title .fa-solid').css('background-color','var(--color-grey4)')
+    $('.small-title .fa-solid').css('color','var(--color-grey1)')
+  }
+}
 
 function pageColorChg(){
-  // cliccked button should be active
+  // clicked button should be active
   for(let i = 0; i < sectBtn.length; i++){
     sectBtn[i].addEventListener('click', function(){
       let currentBtn = document.querySelectorAll('.active-btn');
@@ -41,6 +53,10 @@ function pageColorChg(){
       let element = document.getElementById(id);
       element.classList.add('active');
     }
+  })
+
+  smallCon.addEventListener('click', function(){
+    smallstyleChg();
   })
 
   for(let i = 0; i < smallBtns.length; i++){
