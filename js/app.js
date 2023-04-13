@@ -9,6 +9,7 @@ const smallIcon = document.querySelectorAll('.small-icon');
 const smallIcons = document.querySelector('.small-title');
 const smallCon = document.querySelector('.small-controlls');
 const headImg = document.querySelector('.head-img');
+// const sendEmailBtn = document.querySelector('.sendEmailBtn');
 
 
 let smallstyleChg = () =>{
