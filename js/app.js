@@ -9,7 +9,24 @@ const smallIcon = document.querySelectorAll('.small-icon');
 const smallIcons = document.querySelector('.small-title');
 const smallCon = document.querySelector('.small-controlls');
 const headImg = document.querySelector('.head-img');
-// const sendEmailBtn = document.querySelector('.sendEmailBtn');
+
+
+document.getElementById("sendEmailBtn").addEventListener("click", function(event) {
+  event.preventDefault();
+  var subject = document.getElementsByName("subject")[0].value;
+  var name = document.getElementsByName("name")[0].value;
+  var email = document.getElementsByName("email")[0].value;
+  var message = document.getElementsByName("msg")[0].value;
+  var emailBody = "Email: " + email + "\n" +
+                  "Name: " + name + "\n" +
+                  "Subject: " + subject + "\n\n" +
+                  "Message:\n" + message;
+  var mailtoLink = "mailto:bknb1102@icloud.com" +
+                   "?subject=" + encodeURIComponent(subject) +
+                   "&body=" + encodeURIComponent(emailBody);
+  window.location.href = mailtoLink;
+});
+
 
 
 let smallstyleChg = () =>{
